@@ -1,0 +1,13 @@
+//responsive features
+@import "./responsive/media.scss";
+
+//common
+@import "./common/variables.scss", "./common/mixins.scss",
+  "./common/animations/animations.scss";
+
+//base
+@import "./base/base.scss";
+
+//layout
+@import "./layout/canvas.scss", "./popup/popup.scss",
+  "./layout/buttons/button_spin.scss";

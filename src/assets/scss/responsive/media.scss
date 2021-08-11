@@ -1,0 +1,11 @@
+@mixin media($screen) {
+  @if ($screen == "phone") {
+    @media all and (max-width: 460px) {
+      @content;
+    }
+  } @else if($screen == "tablet") {
+    @media all and (max-width: 768px) {
+      @content;
+    }
+  }
+}

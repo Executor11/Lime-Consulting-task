@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="./" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lime Consulting Test Task</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <!-- scripts -->
+    <script
+      src="https://kit.fontawesome.com/e0c0627106.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="canvas__wrapper">
+        <canvas class="canvas" width="500" height="500"></canvas>
+      </div>
+      <button class="button button__spin">SPIN</button>
+    </div>
+
+    <!-- popup -->
+    <div class="popup popup__hidden">
+      <header class="popup__header">
+        <p class="popup__header_description">Congratulations! </p>
+        <div class="popup__header_close"><i class="fas fa-times"></i></div>
+      </header>
+      <section class="popup__section">
+        <img src="./img/win.png" alt="popup image" class="win_image" />
+
+        <div class="wheel-win-number">6</div>
+      </section>
+      <div class="popup__button">
+        <button class="button button__respin">RESPIN</button>
+      </div>
+    </div>
+    <div class="popup__backdrop popup__hidden"></div>
+
+    <!-- scripts -->
+    <script src="./js/bundle.js"></script>
+  </body>
+</html>

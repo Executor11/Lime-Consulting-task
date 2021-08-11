@@ -1,0 +1,51 @@
+@import "../common/mixins.scss";
+
+.wrapper {
+  @include flex__center;
+  flex-direction: column;
+}
+.canvas__wrapper {
+  @include flex__center;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 120px;
+    height: 75px;
+
+    @include background__image(".././img/arrow.png");
+
+    position: absolute;
+    right: 3%;
+    top: 45%;
+
+    transform: rotate(-90deg) scale(1.1);
+    z-index: 2;
+
+    @include media("phone") {
+      width: 20%;
+      height: 12%;
+      right: 5%;
+    }
+  }
+}
+
+.canvas {
+  border-radius: 50%;
+  margin: 2rem;
+  background: $blue;
+  background: linear-gradient(
+    180deg,
+    $blue 0%,
+    $aquablue 24%,
+    $green 51%,
+    $yellow 72%,
+    $red 100%
+  );
+  -webkit-box-shadow: 5px 2px 55px 5px $red;
+  box-shadow: 5px 2px 55px 5px $red;
+
+  @include media("phone") {
+    width: 90%;
+  }
+}

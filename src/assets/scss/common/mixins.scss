@@ -1,0 +1,16 @@
+@mixin background__image($src) {
+  background-image: url($src);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@mixin flex__center($justify: null) {
+  display: flex;
+  @if ($justify) {
+    justify-content: $justify;
+  } @else {
+    justify-content: center;
+  }
+  align-items: center;
+}

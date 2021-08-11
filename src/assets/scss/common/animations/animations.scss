@@ -1,0 +1,27 @@
+@keyframes drag {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    top: 60%;
+  }
+  100% {
+    top: 50%;
+
+    opacity: 1;
+  }
+}
+
+@keyframes drag_mobile {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    top: 10%;
+  }
+  100% {
+    top: 0%;
+
+    opacity: 1;
+  }
+}

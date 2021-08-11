@@ -1,0 +1,22 @@
+.button {
+  width: 200px;
+  height: 60px;
+
+  color: $red;
+  background: $orange;
+
+  outline: none;
+  border-radius: 2rem;
+  border: none;
+
+  font-size: 2rem;
+
+  cursor: pointer;
+
+  font-weight: bold;
+  text-align: center;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
