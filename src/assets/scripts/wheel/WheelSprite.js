@@ -70,28 +70,28 @@ export default class WheelSprite {
 
           // проверка элемента на выбраного, ну и его подсветка в случае если он попадает в ту зону визуал
           if (i == selected) {
-            context.fillStyle = "#FFF";
-            context.shadowColor = "#FFF";
+            context.fillStyle = this.config.font_color_selected;
+            context.shadowColor = this.config.font_shadow_selected;
             context.shadowBlur = this.config.radius / 20;
           } else {
-            context.fillStyle = "#AAA";
-            context.shadowColor = "#000";
+            context.fillStyle = this.config.font_color;
+            context.shadowColor = this.config.font_shadow;
             context.shadowBlur = this.config.radius / 100;
           }
-
-          // настройки текста
 
           // размер текста можно поиграться с font_size переменной в config
 
           context.font =
-            "bold " +
+            this.config.font_weight +
+            " " +
             (this.config.radius / this.config.sections.length) *
               this.config.font_size +
-            "px sans-serif";
+            "px " +
+            this.config.font_family;
 
           // расположение текста по вертикали от центра,  меняем center-left-rigth и тд
-          context.textAlign = "center";
-          context.textBaseline = "middle";
+          context.textAlign = this.config.font_align;
+          context.textBaseline = this.config.font_baseline;
 
           // вращение вместе с элементом
           context.translate(contextX, contextY);

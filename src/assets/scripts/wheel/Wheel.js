@@ -13,7 +13,6 @@ export default class Wheel {
 
     this.angle = 0;
     this.running = false;
-    // this.sprite.render(this.angle);
   }
 
   //  функция которая определяет вращение
